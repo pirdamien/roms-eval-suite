@@ -1,0 +1,114 @@
+
+roms-eval-suite
+
+Author: Pierre Damien (UCLA)
+Description: A suite of MATLAB scripts developed to evaluate ROMS and biogeochemical model outputs. This toolbox provides post-processing, diagnostics, and comparison with observational datasets.
+
+----------------------------------------
+
+Required MATLAB Packages
+
+1 -  M_MAP
+     A MATLAB toolbox for mapping geographic data.
+
+2 -  wesMap colormaps (included)
+     Color palettes adapted from Patrick Rafter for aesthetic and effective visualization.
+
+3 -  plot2svg
+     Optional: Enables exporting figures in SVG format for high-quality vector graphics.
+
+4 -  CO2SYS-MATLAB
+     Required for computing carbonate chemistry variables (e.g., DIC, Alkalinity, pH, Ω).
+
+5 -  Mixed Layer Depth (MLD) Estimation
+
+        GOSML: Adapted from Holte & Talley (2009)
+        A New Algorithm for Finding Mixed Layer Depths
+
+        JAMSTEC Criterion: Based on density threshold
+        MLD resources
+
+----------------------------------------
+ 
+ EVALUATION DATASETS & REFERENCES
+
+
+The compiled dataset and model evaluation are described in:
+Damien et al., Development of a Mesoscale- and Tide-Resolving Ocean–Biogeochemistry Model for the Pacific: Tidal Enhancement of the Biological Carbon Pump, in prep.
+
+
+Below is a list of referenced datasets:
+
+The COREv2 dataset is available at https://rda.ucar.edu/datasets/d260002/ from 
+Yeager, S. G., & Large, W. G. (2008). Core.2 global air-sea flux dataset. Boulder CO: Research Data Archive at the National Center for Atmospheric Research, Computational and Information Systems Laboratory. Retrieved from https://rda.ucar.edu/datasets/dsd260002/
+retrieved from https://climatedataguide.ucar.edu/climate-data/corev2-air-sea-surface-fluxes. 
+
+The Scatterometer Climatology of Ocean Winds (SCOW) is accessible at https://chapman.ceoas.oregonstate.edu/scow/. 
+
+The TOA data is available on the Global Tropical Moored Buoy Array website (https://www.pmel.noaa.gov/tao/drupal/disdel/) and made accessible by the GTMBA Project Office of NOAA/PMEL. 
+
+TPXO models of global ocean barotropic tides are available at https://www.tpxo.net. 
+
+The altimeter satellite DUACS data is accessible at https://data.marine.copernicus.eu/product/SEALEVEL_GLO_PHY_L4_MY_008_047 (https://doi.org/10.48670/moi-00148). 
+
+The GOSML dataset can be downloaded at https://www.pmel.noaa.gov/gosml/. 
+
+The observation of equatorial current structure is accessible in supplementary material of the following paper: 
+Cravatte, S., Kestenare, E., Marin, F., Dutrieux, P., & Firing, E. (2017). Subthermocline and intermediate zonal currents in the tropical pacific ocean: Paths and vertical structure. Journal of Physical Oceanography, 47 (9), 2305–2324.
+
+The World Ocean Atlas (WOA) is made available by NOAA at  https://www.ncei.noaa.gov/products/world-ocean-atlas. 
+
+The products of the monthly climatological dissolved Fe described in 
+Huang, Y., Tagliabue, A., & Cassar, N. (2022). Data-driven modeling of dissolved iron in the global ocean. Frontiers in Marine Science, 9 , 837183.
+and available at https://zenodo.org/records/6994318 
+Cassar, N., Huang, Y., & Tagliabue, A. (2022). Data-driven modeling of dissolved iron in the global ocean. https://doi.org/10.5281/zenodo.6994318. (Accessed: 2025-02-11) doi: 10.5281/zenodo.6994318
+
+The compilation of N2O measurements is available for download on the Biological and Chemical Oceanography Data Management Ofﬁce (BCO-DMO) portal (https://www.bco-dmo.org/dataset/810032), 
+Bianchi, D., & Yang, S. (2020). Global reconstruction of surface oceanic n2o disequilibrium and its associated flux. Biological and Chemical Oceanography Data Management Office (BCO-DMO). (Version 1) Version Date 2020-04-27. (Accessed: 2025-02-11) doi: doi:10.26008/1912/bco-dmo.810032.1
+
+The GLODAP dataset were downloaded at https://glodap.info/index.php/mapped-data-product/.  
+
+The observation-based global monthly gridded sea surface pCO2 product 
+Jersild, A., Landsch¨utzer, P., Gruber, N., & Bakker, D. (2023). An observation-based global monthly gridded sea surface pco2 and air-sea co2 flux product from 1982 onward and its monthly climatology (ncei accession 0160558). version 7.7. noaa national centers for environmental information. (Accessed: 2025-02-17) doi: https://doi.org/10.7289/v5z899n6
+is accessible at: https://www.ncei.noaa.gov/access/ocean-carbon-acidification-data-system/oceans/SPCO2_1982_present_ETH_SOM_FFN.html. 
+
+Atmospheric dust deposition is accessible in 
+Kok, J. F., Adebiyi, A. A., Albani, S., Balkanski, Y., Checa-Garcia, R., Chin, M.,  . Whicker, C. A. (2021). Dustcomm data of improved representa- tion of the global dust cycle using observational constraints on dust properties and abundance, university of california – los angeles. (Accessed: 2025-02-17) doi:https://doi.org/10.15144/S4WC77
+, and the dataset used for soluble iron deposition is an updated version of 
+Hamilton, D. S., Scanza, R., Rathod, S., Bond, T., Kok, J., Li, L., . . . Mahowald, N. (2020a). Data from: Recent (1980 to 2015) trends and variability in daily-to-interannual soluble iron deposition from dust, fire, and anthropogenic sources. [dataset] cornell university library ecommons repository. (Accessed: 2025-02-17) doi: https://doi.org/10.7298/xqqj-qk90
+, described in 
+Hamilton, D. S., Scanza, R. A., Rathod, S. D., Bond, T. C., Kok, J. F., Li, L., . . .Mahowald, N. M. (2020b). Recent (1980 to 2015) trends and variability in daily-to-interannual soluble iron deposition from dust, fire, and anthropogenic1155
+sources. Geophysical Research Letters, 47 (17), e2020GL089688.
+
+The monthly climatology of surface chlorophyll concentration from Aqua-Modis and SeaWiFS are made accessible by Nasa at https://oceandata.sci.gsfc.nasa.gov/l3/. 
+
+The NPP products can be downloaded at http://orca.science.oregonstate.edu/npp_products.php. 
+
+POC maps adn profiles is compared agaisn tthe results of the 3 following references : 
+
+Clements, D., Yang, S., Weber, T., McDonnell, A., Kiko, R., Stemmann, L., &
+Bianchi, D. (2023). New estimate of organic carbon export from optical
+measurements reveals the role of particle size distribution and export horizon.
+Global Biogeochemical Cycles, 37 (3), e2022GB007633.
+
+Nowicki, M., DeVries, T., & Siegel, D. A. (2022). Quantifying the carbon export and
+sequestration pathways of the ocean’s biological carbon pump. Global Biogeo-
+chemical Cycles, 36 (3), e2021GB007083.
+
+Weber, T., & Bianchi, D. (2020). Efficient particle transfer to depth in oxygen
+minimum zones of the pacific and indian oceans. Frontiers in Earth Science, 8 ,
+376
+
+------------------------------------
+
+ HOW TO USE
+
+1 - Clone or download this repository.
+2 - Install the required packages and download the dataset listed above
+3 - Open MATLAB and run the compute*.m scripts 
+4 - Customize file paths or variable names as needed in your workflow.
+
+
+
+
+
