@@ -10,20 +10,25 @@ Required MATLAB Packages
 
 1 -  M_MAP
      A MATLAB toolbox for mapping geographic data.
+     https://www-old.eoas.ubc.ca/~rich/map.html
 
 2 -  wesMap colormaps (included)
      Color palettes adapted from Patrick Rafter for aesthetic and effective visualization.
+     https://github.com/tristangstanford/wesMap
 
 3 -  plot2svg
      Optional: Enables exporting figures in SVG format for high-quality vector graphics.
+     https://github.com/jschwizer99/plot2svg
 
 4 -  CO2SYS-MATLAB
      Required for computing carbonate chemistry variables (e.g., DIC, Alkalinity, pH, Ω).
+     https://github.com/jamesorr/CO2SYS-MATLAB
 
 5 -  Mixed Layer Depth (MLD) Estimation
 
         GOSML: Adapted from Holte & Talley (2009)
         A New Algorithm for Finding Mixed Layer Depths
+        https://journals.ametsoc.org/view/journals/atot/26/9/2009jtecho543_1.xml?tab_body=supplementary-materials        
 
         JAMSTEC Criterion: Based on density threshold
         MLD resources
